@@ -2,7 +2,8 @@ module Main exposing (init, main, update)
 
 import Browser
 import Browser.Navigation as Nav
-import Html exposing (Html, p, text)
+import Html exposing (Html, div, img, p, text)
+import Html.Attributes exposing (class, src)
 import Url exposing (Url)
 
 
@@ -41,5 +42,5 @@ update msg model =
 view : Model -> Browser.Document Msg
 view _ =
     { title = "STUDIO KRAFT Építész műterem"
-    , body = [ p [] [ text "Entry point" ] ]
+    , body = [ div [ class "bg" ] [ img [ class "logo", src "/assets/KRAFT_LOGO_feher_atlatszo-cropped.png" ] [] ] ]
     }
