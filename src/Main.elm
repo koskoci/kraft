@@ -42,5 +42,5 @@ update msg model =
 view : Model -> Browser.Document Msg
 view _ =
     { title = "STUDIO KRAFT Építész műterem"
-    , body = [ div [ class "bg" ] [ img [ class "logo", src "/assets/KRAFT_LOGO_feher_atlatszo-cropped.png" ] [] ] ]
+    , body = [ div [ class "bg" ] [ img [ class "logo", src "./assets/KRAFT_LOGO_feher_atlatszo-cropped.png" ] [] ] ]
     }
